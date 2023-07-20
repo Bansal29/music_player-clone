@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:ital@1&display=swap");
+.main {
+  background-image: url("bg-3.jpg");
+  background-size: cover;
+  backdrop-filter: blur(20px);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Merriweather";
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: aliceblue;
+  border-bottom: 2px solid blue blur(2px);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0px 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.brand img {
+  width: 50px;
+  padding: 2px 8px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.container {
+  min-height: 65vh;
+  background-color: black;
+  color: white;
+  font-family: "Merriweather";
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  filter: opacity(0.9);
+}
+.bottom {
+  position: sticky;
+  height: 90px;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+.icons {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.icons i {
+  cursor: pointer;
+}
+#progressbar {
+  width: 80%;
+  cursor: pointer;
+}
+.songItem {
+  margin-top: 15px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 35px;
+  padding-right: 10px;
+  font-size: larger;
+}
+.songItem:hover {
+  background-color: aqua;
+}
+.songItem img {
+  width: 50px;
+  margin: 0 23px;
+  border-radius: 25px;
+}
+.timestamp {
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.timestamp i {
+  cursor: pointer;
+  padding: 7px;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Merriweather";
+}
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+#mastersongname {
+  padding-left: 10px;
+}
+#cov {
+  width: 70px;
+  position: absolute;
+  left: 2vw;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  border-radius: 35px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+    src="https://kit.fontawesome.com/1a2a12610c.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="main" id="back">
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="logo.png" alt="spotify" class="fluid" /><span>Spotify</span>
+        </li>
+        <li><a href="#">Home<a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <!-- Main Content-->
+    <div class="container">
+        <div class="songList">
+            <h1>Favourite Songs</h1>
+            <div>
+                <div class="songItem" id="s1">
+                    <img src="2.jpg" alt="2">
+                    <span>Pehla gaana</span>
+                    <span class="songlistplay"><span class="timestamp">05:24<i id="1" class="fa-regular songitemplay fa-1.5x fa-circle-play" style="color: black;"></i></span></span>
+                </div>
+                <div class="songItem" id="s2">
+                    <img src="3.jpg" alt="3">
+                    <span>Dusra Gaana</span>
+                    <span class="songlistplay"><span class="timestamp">03:24<i id="2" class="fa-regular songitemplay fa-1.5x fa-circle-play" style="color: black;"></i></span></span>
+                </div>
+                <div class="songItem" id="s3">
+                    <img src="4.jpg" alt="4">
+                    <span>Teesra Gaana</span>
+                    <span class="songlistplay"><span class="timestamp">02:44<i id="3" class="fa-regular songitemplay fa-1.5x fa-circle-play" style="color: black;"></i></span></span>
+                </div>
+                <div class="songItem" id="s4">
+                    <img src="5.jpg" alt="5">
+                    <span>Chautha Gaana</span>
+                    <span class="songlistplay"><span class="timestamp">04:13<i id="4" class="fa-regular songitemplay fa-1.5x fa-circle-play" style="color: black;"></i></span></span>
+                </div>
+                <div class="songItem" id="s5">
+                    <img src="6.jpg" alt="6">
+                    <span>Paanchva Gaana</span>
+                    <span class="songlistplay"><span class="timestamp">03:12<i id="5" class="fa-regular songitemplay fa-1.5x fa-circle-play" style="color: black;"></i></span></span>
+                </div>
+                <div class="songItem" id="s6">
+                    <img src="2.jpg" alt="7">
+                    <span>Chanta Gaana</span>
+                    <span class="songlistplay"><span class="timestamp">02:55<i id="6" class="fa-regular songitemplay fa-1.5x fa-circle-play" style="color: black;"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <!-- Bottom -->
+    <div class="bottom">
+        <img src="3.jpg" id="cov">
+        <input type="range" name="duration" id="progressbar" min="0" max="100" value="0">
+        <div class="icons">
+            <i id="prev" class="fa-solid  fa-2x fa-backward-step" style="color: #ffffff;"></i>
+            <i id="masterplay" class="fa-regular  fa-2x fa-circle-play" id="masterplay" style="color: #ffffff;"></i>
+            <i id="next" class="fa-solid  fa-2x fa-forward-step" style="color: #ffffff;"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="45px" alt="" id="gif"><span id="mastersongname">Pehla Nasha</span>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
